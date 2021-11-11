@@ -1,0 +1,1081 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #3C2A16;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+@font-face{
+    font-family: 'UtopiaStd-Regular';
+    src: url('../fonts/UtopiaStd-Regular.otf');
+    font-style: normal;
+    font-weight: 400;
+} 
+
+@font-face{
+    font-family: 'UtopiaStd-Italic';
+    src: url('../fonts/UtopiaStd-Italic.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+body.background-artistas{
+    background-image: url(../img/backgrArtistas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header.header-background{
+    background-image: url(../img/backgrImg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width: 414px){
+    .header-content{
+        background-color: #3c2a16c7;
+    }
+}
+@media screen and (max-width: 768px){
+    .header-content{
+        background-color: #3c2a16c7;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header .header-content {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    header .textIntro {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+        .header-content {
+        width: 100%;
+    }
+}
+
+body.background-sobre{
+    background-image: url(../img/bgSobre.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body.background-seculo-pintor{
+    background: linear-gradient(#3c2a167d, #3c2a167d), url(../img/WilliamAcadem.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body.background-seculo-pintor2{
+    background: linear-gradient(#3c2a167d, #3c2a167d), url(../img/ClaudeClass.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+ width: 9px;
+ height: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+ background: linear-gradient(13deg, #f6f7f2 0%,#a8947d 55%);
+ border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+ background: #a69078;
+}
+
+::-webkit-scrollbar-track{
+ background: #ffffff;
+ border-radius: 9px;
+ box-shadow: inset 30px 11px 12px #f0f0f0;
+}
+
+
+/*-------------NavBar------------*/
+
+/* Hamburger */
+.navbar-toggle {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18px;
+    width: 50px;
+    padding: 0;
+    background-color: transparent !important;
+    transition: all .5s ease-out;
+    position: relative;
+}
+
+.navbar-toggle .hamburger-span {
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+    transition: all .5s ease-out;
+    position: relative;
+}
+
+.navbar-toggle .hamburger-span:nth-child(2) {
+    width: 35px;
+}
+
+.navbar-toggle[aria-expanded='true'] .hamburger-span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggle[aria-expanded='true'] .hamburger-span:first-child {
+    transform: rotate(45deg);
+    top: 7px;
+}
+
+.navbar-toggle[aria-expanded='true'] .hamburger-span:last-child {
+    transform: rotate(-45deg);
+    bottom: 7px;
+}
+.navbar-toggle .hamburger-span:first-child {
+    transform: rotate(0);
+    top: 0;
+}
+
+.navbar-toggle .hamburger-span:last-child {
+    transform: rotate(0);
+    bottom: 0;
+}
+
+/* end Hamburger */
+
+.navbar {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-collapse.collapse.menuCenter{
+    font-family: UtopiaStd-Regular;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    border-top: 0;
+    box-shadow: none;
+}
+
+element.style {
+    height: 1px;
+}
+
+.navbar-collapse.collapse.menuCenter {
+    font-family: UtopiaStd-Regular;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    border-top: 0;
+    box-shadow: none;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+@media screen and (min-width:  768px) {
+    .navbar-collapse.collapse.menuCenter{
+        display: flex !important;
+        margin-bottom: 62px;
+        margin-top: 20px;
+        padding-left: 115px;
+        padding-right: 100px;
+    }
+}
+
+.afterMenuLeft .menu a {
+    background-color: transparent !important;
+}
+
+.afterMenuLeft .menu.active a {
+    background-color: transparent !important;
+    color: #E4D3A9 !important;
+}
+
+@media screen and (max-width: 767px) {
+    .afterMenuLeft .menu a {
+        display: inline-block;
+    }
+
+    .afterMenuLeft .menu.active a {
+        border-bottom: 1px solid #E4D3A9;
+    }
+}
+
+.afterMenuLeft .menu:last-child {
+    margin-right: auto;
+}
+
+.afterMenuLeft .menu:first-child {
+    margin-right: 25%;
+}
+
+.afterMenuRight .menu:first-child {
+    margin-left: auto;
+    margin-right: 25%;
+}
+
+.menu{
+    align-items: center;
+    cursor: pointer;
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+
+.navbar-default .navbar-nav>.menu a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0;
+    line-height: 32px;
+    font-family: UtopiaStd-Regular;
+}
+
+.navbar-default .navbar-nav>.menu a:hover{
+    color: #E4D3A9;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+    color: #E4D3A9 !important;
+
+}
+.navbar-header {
+    padding: 35px 0;
+    margin: 0 25px;
+}
+
+.navbar-toggle {
+    margin-right: 0;
+}
+
+@media screen and (min-width:  768px) {
+    .afterMenuLeft .menu {
+        text-align: left;
+    }
+
+    .afterMenuRight .menu {
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-brand,
+    .navbar-header {
+        display: none
+    }
+}
+
+.navbar-brand {
+    padding: 0;
+    height: 80px;
+}
+
+.navbar-brand .logotipo {
+    width: auto;
+    height: 100%;
+    padding-bottom: 0;
+}
+
+.logotipo{
+    width: 160px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:  768px) {
+    .afterMenu {
+        width: 35%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:  767px) {
+    .afterMenu .menu {
+        margin: 0 !important;
+        text-align: center
+    }
+}
+
+.afterMenu::after{
+    content: '';
+    position: absolute;
+    background-color: #E4D3A9;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+}
+
+.after-container::after{
+    content: '';
+    position: absolute;
+    background-color: #E4D3A9;
+    width: 100%;
+    height: 1px;
+    top: 190px;
+    left: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .afterMenu::after {
+        content: none;
+    }
+}
+    .logo_header {
+        flex-shrink: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .logo_header {
+        display: none
+    }
+}
+
+.textIntro{
+    margin-left: 65px;
+    margin-right: 65px;
+    padding: 35px;
+    padding-bottom: 25px;
+}
+
+.intro{
+    font-family: UtopiaStd-Italic;
+    text-align: center;
+    color: white;
+    background-color: #3c2a16c7;
+    padding: 30px 50px;
+    border-radius: 20px;
+}
+
+.artdrop{
+    padding: 20px;
+}
+
+.paragraph{
+    font-family: UtopiaStd-Regular;
+    font-size: 20px;
+    padding-bottom: 55px;
+}
+
+.arrow{
+    text-align: center;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.arrow svg:hover .cls-1 {
+    fill: #53482D;
+}
+
+.arrow svg:hover .cls-2{
+   stroke: #fff;
+}
+
+
+@media screen and (max-width:  768px) {
+    .intro{
+        padding: 0;
+        background: none;
+    }
+    .textIntro{
+        margin: 0;
+        padding: 0;
+    }
+    .arrow{
+        display: none;
+    }
+}
+
+ /*-----------MAIN-----------*/
+
+.headerIndex{
+    display: none;
+
+}
+
+.seculo{
+    font-family: UtopiaStd-Italic;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 225px;
+    margin-bottom: 175px !important;
+}
+
+/* Slick carousel */
+/* Slick Dots */
+.slick-dots {
+    bottom: -55px;
+}
+
+.slick-dots li button:before {
+    font-size: 16px;
+    color: #795548;
+    opacity: .5;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #f1cd73;
+}
+
+@media screen and(max-width: 768px){
+    .headerIndex{
+     display: block;
+    }
+}
+
+
+/*-------Galeria-----*/
+
+.galeria{
+    padding: 70px;
+    padding-bottom: 0;
+} 
+
+.galeriaSize{
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.seculoSize{
+   /* width: 29%; */
+    cursor: pointer;
+    position: relative;
+}
+
+.seculoSize a {
+    display: inline-block;
+}
+
+.scaleImg{
+    object-fit: cover;
+    height: 490px;
+    transition: 1s;
+}
+
+.scaleImg-Galeria{
+    object-fit: cover;
+    transition: 1s;
+    height: 615px;
+    width: 100%
+
+}
+
+.aparecer{
+    display: none;
+    color: #E4D3A9;
+    position: absolute;
+    top: 50%;
+    font-size: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fontItalic{
+    font-family: UtopiaStd-Italic;
+    font-size: 30px;
+}
+
+.fontItalic-name{
+    font-family: UtopiaStd-Italic;
+    font-size: 20px;
+}
+
+.galeriaSize:hover .scaleImg-Galeria{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+.galeriaSize:hover .aparecer{
+    display: block;
+
+}
+
+.seculoSize:hover .aparecer{
+    display: block;
+
+}
+
+.seculoSize:hover .scaleImg{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.arrows-center{
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.arrow-next{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-bottom: 30px;
+    padding-right: 50px;
+}
+.voltar{
+    color: #fff;
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 750px){
+    .galeria{
+    padding: 0;
+    }
+    .scaleImg-Galeria{
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 768px){
+
+    .scaleImg-Galeria{
+        height: 500px;
+    }
+}
+
+
+/*CHECK ARROW HOVER*/
+
+.arrowLeft-Right{
+    width: 738px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+
+
+/*-------Artistas------*/
+
+.buttonsArtistas-center{
+    text-align: center;
+    margin-top: 85px;
+    margin-bottom: 130px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.buttonsArtistas-center .slick-prev {
+    left: 15px;
+    z-index: 1;
+}
+
+.buttonsArtistas-center .slick-next {
+    right: 15px;
+    z-index: 1;
+}
+
+@media screen and (max-width:  768px) {
+    .buttonsArtistas-center{
+        margin-bottom: 70px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.btn_box {
+    text-align: center;
+}
+
+.artistas-button{
+    max-width: 100%;
+    font-family: UtopiaStd-Regular;
+    transition: all 0.2s;
+    border-radius: 15px;
+    border: 1px solid #E4D3A9;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media screen and (max-width:  768px) {
+    .artistas-button {
+        font-size: 27px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.artistasAlign{
+    margin-bottom: 160px;
+}
+
+.artistImage-center{
+    text-align: center;
+}
+
+.artistImage-center a {
+    text-decoration: none;
+}
+
+.radiusImage{
+    cursor: pointer;
+    object-fit: cover;
+    height: 330px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.radiusImage:hover{
+    border-radius: 0;
+    transition: all 0.3s ease-out;
+}
+
+.artist-name{
+    font-family: UtopiaStd-Italic;
+    color: #E4D3A9;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 768px){
+    .artistImage-center {
+        margin-bottom: 50px;
+    }
+}
+
+
+/*-----BIOGRAFIA-----*/
+
+.bgBio{
+    background-image: linear-gradient(#3c2a1661, #3c2a1661),url(../img/Caravaggio.jpg);
+    background-position: 65% 20%;
+    position: fixed;
+    width: 50%;
+    margin: 0; 
+    padding: 0;
+    height: 100%;
+    top: 0;
+    left: 58%;
+}
+.h-Bio{
+    font-size: 45px;
+    font-family: UtopiaStd-Italic; 
+}
+
+.bioText{
+    font-family: UtopiaStd-Regular;
+    color: #fff;
+    padding-left: 65px;
+    margin-bottom: 30px;
+}
+
+.paragraphBio{
+    font-size: 16px;
+    text-align: justify;
+}
+.artistName{
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px){
+    .bioText{
+        padding-left: 15px;
+    }
+
+    .h-Bio{
+        text-align: center;
+        font-size: 24px;
+    }
+    .paragraphBio {
+    font-size: 18px;
+    }
+} 
+/*-------Seculo Academismo-----*/
+
+.seculo-name h1{
+    font-family: UtopiaStd-Italic; 
+    color: #E4D3A9;
+    text-align: center; 
+    font-size: 45px;
+}
+
+
+/*-------Pintura do Seculo--------*/
+
+h4{
+    font-size: 25px;
+}
+
+.pintura-name h1{
+    font-family: UtopiaStd-Italic;
+    color: #fff;
+}
+
+.pinturaName-center{
+    text-align: center;
+}
+
+.pintura-information{
+    margin-top: 70px;
+    font-size: 20px;
+    font-family: UtopiaStd-Regular;
+    color: #fff;
+    margin-bottom: 70px;
+}
+
+.boxPintor{
+    padding-top: 40px;
+}
+
+h4{
+    color: #efe1bf;;
+}
+
+@media screen and (min-width: 768px){
+    .boxPintor{
+        display: flex;
+        align-items: center;
+    }
+    .pintura img{
+        display: block;
+        margin: auto;
+    }
+    .pictureName{
+        font-size: 30px;
+    }
+} 
+
+@media screen and (max-width: 767px){
+    .pintura {
+        text-align: center
+    }
+    .pintura img{
+        width: 300px
+    }
+} 
+
+
+
+/*--------SOBRE-------*/
+
+.bgLeft{
+    position: fixed;
+    width: 50%;
+    margin: 0; 
+    padding: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(36 27 17 / 60%);
+}
+
+.artdrop-name{
+    font-family: UtopiaStd-Italic;
+    font-size: 45px;
+    color: #fff;
+    padding: 0;
+}
+
+.text-box{
+
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-bottom: 80px;
+}
+
+.white{
+    text-align: justify;
+    font-family: UtopiaStd-Regular;
+    padding-top: 40px;
+    width: 50%;
+    color: #fff;
+    margin: 0;
+    font-size: 19px;
+    padding-bottom: 80px;
+}
+
+.white::before{
+    content: '';
+    position: absolute;
+    background-color: #E4D3A9;
+    width: 35%;
+    height: 2px;
+    top: 103px;
+}
+
+.white::after{
+    content: '';
+    position: absolute;
+    background-color: #E4D3A9;
+    width: 35%;
+    height: 2px;
+    bottom: 65px;
+    left: 175px;
+}
+
+/*CHECK*//*CHECK*//*CHECK*//*CHECK*//*CHECK*//*CHECK*/
+@media screen and (max-width: 768px){
+    .after-container::after{
+        display: none;
+    }
+    .bgLeft{
+        display: none;
+    }
+    .white{
+       width: 100%;
+       background-color: rgb(60, 42, 22, 50%);
+       padding: 20px;
+    }
+    .white::before{
+        display: none;
+    }
+    .white::after{
+        display: none;
+    }
+
+    .text-box{
+        margin-left: 0;
+    }
+    .textSobre{
+        padding: 0 10%;
+    }
+}
+
+
+/*---------FOOTER----------*/
+
+footer{
+    background-size: 110%;
+    background-position: 50% 95%;
+    position: relative;
+    z-index: 4;
+}
+
+footer.home-background{
+    border-top: 1px solid #E4D3A9;
+    background-image: url(../img/footer.png);
+}
+
+.footer-cont-padding{
+    padding-top: 150px;
+    padding-bottom: 13px;
+}
+
+.footer-cont{
+    padding-bottom: 13px;
+}
+
+.footer-cont::before{
+    content: '';
+    position: absolute;
+    background-color: #E4D3A9;
+    width: 100%;
+    height: 1px;
+}
+
+.footer-icons{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.icons{
+    width: 10%;
+}
+
+.mainIcons{
+    padding-top: 10px;
+}
+
+.icons:hover{
+    border-radius: 100%;
+    background-color: #9A7E43;
+    width: 50px;
+    height: 50px;
+    margin: -1px
+}
+
+.menuFooter a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menuFooter a:hover{
+    color: #E4D3A9;
+}
+
+.menuCenter-footer,.nameFooter{
+    font-family: 'UtopiaStd-Regular';
+}
+
+.newsletter{
+    font-family: 'UtopiaStd-Italic';
+}
+
+.menuCenter-footer, .newsletter{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+    padding-right: 100px;
+}
+
+.menuFooter{
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    padding-left: 90px;
+}
+
+.menuFooter:hover{
+    color: #E4D3A9;
+}
+
+.text-news{
+    color: #ffffff;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.brown-footer{
+    background-color: #3C2A16;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer-dark{
+    background-color: #231607; 
+}
+
+.nameJulia{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+/*CHECK*//*CHECK*//*CHECK*//*CHECK*//*CHECK*//*CHECK*/
+.formInput{
+    width: 100%;
+    display: flex;
+}
+
+.text-news{
+    margin-left: 30px;
+}
+
+input{
+    background: none;
+    width: 55%;
+    color: #E4D3A9;
+    border: 1px solid #E4D3A9;
+    border-radius: 2px 0px 0px 2px;
+    outline:none
+}
+
+.enviar{
+    transition: all 0.2s;
+    border-radius: 0px 2px 2px 0px;
+    border: 1px solid #E4D3A9;
+    border-left: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;   
+}
+
+button:hover{
+    background-color: #E4D3A9;
+    color: #3C2A16;
+}
+
+@media screen and (max-width: 768px){
+    footer.home-background{
+        background-image: url(../img/backgrImg.jpg);
+        background-size: cover;
+        background-position: 50% 110%;
+    }
+
+    .footer-cont{
+        background-color: rgb(60, 42, 22, 50%);
+        padding-top: 0;
+    }
+    .menuCenter-footer{
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        margin-top: 25px;
+        border-bottom: solid 2px #E4D3A9;
+    }
+
+    .menuFooter{
+        padding-bottom: 10px;
+        font-size: 22px;
+        padding-left: 0;
+    }
+
+    .mainIcons{
+        border-bottom: solid 2px #E4D3A9;
+    }
+
+    .icons{
+        margin: 20px 10px 20px 10px;
+    }
+
+    .formInput{
+        justify-content: center;
+    }
+
+    .menuCenter-footer, .newsletter{
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+
+    .newsletter{
+        display: block;
+    }
+
+    .text-news{
+        margin-left: 0;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+        min-width: 100%;
+    }
+}
